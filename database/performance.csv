@@ -1,0 +1,301 @@
+student_id,subject,topic,score
+1,DBMS,Normalization,45
+1,DAA,Greedy,72
+1,Compiler Design,Parsing,68
+1,Operating Systems,Deadlock,52
+1,Computer Networks,Routing,81
+2,DBMS,Transactions,88
+2,DAA,Dynamic Programming,64
+2,Compiler Design,Lexical Analysis,59
+2,Operating Systems,Scheduling,77
+2,Computer Networks,TCP,69
+3,DBMS,SQL,95
+3,DAA,Graphs,89
+3,Compiler Design,Code Generation,76
+3,Operating Systems,Memory Management,82
+3,Computer Networks,OSI Model,91
+4,DBMS,Indexing,41
+4,DAA,Sorting,56
+4,Compiler Design,Parsing,49
+4,Operating Systems,Deadlock,38
+4,Computer Networks,Routing,62
+5,DBMS,ER Model,87
+5,DAA,Greedy,79
+5,Compiler Design,Optimization,83
+5,Operating Systems,Processes,74
+5,Computer Networks,IP Addressing,85
+6,DBMS,Normalization,52
+6,DAA,Backtracking,47
+6,Compiler Design,Syntax Trees,58
+6,Operating Systems,File Systems,61
+6,Computer Networks,Congestion Control,66
+7,DBMS,Transactions,93
+7,DAA,Graphs,88
+7,Compiler Design,Parsing,90
+7,Operating Systems,Scheduling,84
+7,Computer Networks,TCP,86
+8,DBMS,SQL,72
+8,DAA,Dynamic Programming,68
+8,Compiler Design,Lexical Analysis,74
+8,Operating Systems,Processes,65
+8,Computer Networks,OSI Model,70
+9,DBMS,Indexing,84
+9,DAA,Sorting,79
+9,Compiler Design,Optimization,81
+9,Operating Systems,Memory Management,76
+9,Computer Networks,Routing,88
+10,DBMS,Normalization,39
+10,DAA,Greedy,44
+10,Compiler Design,Parsing,42
+10,Operating Systems,Deadlock,35
+10,Computer Networks,TCP,51
+11,DBMS,Transactions,96
+11,DAA,Graphs,91
+11,Compiler Design,Code Generation,87
+11,Operating Systems,Scheduling,89
+11,Computer Networks,OSI Model,93
+12,DBMS,SQL,78
+12,DAA,Backtracking,73
+12,Compiler Design,Syntax Trees,75
+12,Operating Systems,Processes,80
+12,Computer Networks,IP Addressing,77
+13,DBMS,ER Model,69
+13,DAA,Sorting,71
+13,Compiler Design,Lexical Analysis,66
+13,Operating Systems,Memory Management,74
+13,Computer Networks,Routing,72
+14,DBMS,Normalization,89
+14,DAA,Dynamic Programming,83
+14,Compiler Design,Optimization,85
+14,Operating Systems,File Systems,79
+14,Computer Networks,Congestion Control,81
+15,DBMS,Transactions,92
+15,DAA,Graphs,90
+15,Compiler Design,Code Generation,88
+15,Operating Systems,Scheduling,91
+15,Computer Networks,TCP,87
+16,DBMS,SQL,55
+16,DAA,Greedy,58
+16,Compiler Design,Parsing,53
+16,Operating Systems,Deadlock,49
+16,Computer Networks,OSI Model,61
+17,DBMS,Indexing,80
+17,DAA,Sorting,82
+17,Compiler Design,Syntax Trees,78
+17,Operating Systems,Processes,76
+17,Computer Networks,Routing,84
+18,DBMS,ER Model,94
+18,DAA,Dynamic Programming,92
+18,Compiler Design,Optimization,89
+18,Operating Systems,Memory Management,90
+18,Computer Networks,IP Addressing,95
+19,DBMS,Normalization,48
+19,DAA,Backtracking,52
+19,Compiler Design,Lexical Analysis,45
+19,Operating Systems,Deadlock,43
+19,Computer Networks,Congestion Control,57
+20,DBMS,Transactions,90
+20,DAA,Graphs,86
+20,Compiler Design,Code Generation,88
+20,Operating Systems,Scheduling,85
+20,Computer Networks,TCP,89
+21,DBMS,SQL,77
+21,DAA,Greedy,74
+21,Compiler Design,Parsing,72
+21,Operating Systems,Processes,69
+21,Computer Networks,Routing,81
+22,DBMS,Transactions,86
+22,DAA,Dynamic Programming,84
+22,Compiler Design,Optimization,79
+22,Operating Systems,Memory Management,83
+22,Computer Networks,TCP,88
+23,DBMS,Normalization,43
+23,DAA,Backtracking,47
+23,Compiler Design,Lexical Analysis,45
+23,Operating Systems,Deadlock,41
+23,Computer Networks,Congestion Control,52
+24,DBMS,ER Model,92
+24,DAA,Graphs,89
+24,Compiler Design,Code Generation,91
+24,Operating Systems,Scheduling,88
+24,Computer Networks,OSI Model,94
+25,DBMS,Indexing,68
+25,DAA,Sorting,71
+25,Compiler Design,Syntax Trees,66
+25,Operating Systems,File Systems,73
+25,Computer Networks,IP Addressing,70
+26,DBMS,Transactions,83
+26,DAA,Dynamic Programming,79
+26,Compiler Design,Optimization,81
+26,Operating Systems,Memory Management,77
+26,Computer Networks,TCP,84
+27,DBMS,Normalization,75
+27,DAA,Greedy,72
+27,Compiler Design,Parsing,74
+27,Operating Systems,Processes,70
+27,Computer Networks,Routing,78
+28,DBMS,SQL,97
+28,DAA,Graphs,95
+28,Compiler Design,Code Generation,93
+28,Operating Systems,Scheduling,96
+28,Computer Networks,OSI Model,98
+29,DBMS,ER Model,58
+29,DAA,Backtracking,61
+29,Compiler Design,Lexical Analysis,56
+29,Operating Systems,Deadlock,54
+29,Computer Networks,Congestion Control,63
+30,DBMS,Transactions,91
+30,DAA,Dynamic Programming,88
+30,Compiler Design,Optimization,90
+30,Operating Systems,Memory Management,87
+30,Computer Networks,TCP,92
+31,DBMS,Indexing,73
+31,DAA,Sorting,76
+31,Compiler Design,Syntax Trees,71
+31,Operating Systems,Processes,75
+31,Computer Networks,Routing,79
+32,DBMS,SQL,87
+32,DAA,Graphs,85
+32,Compiler Design,Code Generation,84
+32,Operating Systems,Scheduling,82
+32,Computer Networks,OSI Model,89
+33,DBMS,Normalization,38
+33,DAA,Greedy,42
+33,Compiler Design,Parsing,40
+33,Operating Systems,Deadlock,37
+33,Computer Networks,TCP,48
+34,DBMS,Transactions,95
+34,DAA,Dynamic Programming,93
+34,Compiler Design,Optimization,91
+34,Operating Systems,Memory Management,94
+34,Computer Networks,IP Addressing,96
+35,DBMS,ER Model,80
+35,DAA,Sorting,82
+35,Compiler Design,Syntax Trees,78
+35,Operating Systems,File Systems,81
+35,Computer Networks,Routing,85
+36,DBMS,SQL,89
+36,DAA,Graphs,87
+36,Compiler Design,Code Generation,86
+36,Operating Systems,Scheduling,88
+36,Computer Networks,OSI Model,90
+37,DBMS,Normalization,46
+37,DAA,Backtracking,49
+37,Compiler Design,Lexical Analysis,44
+37,Operating Systems,Deadlock,42
+37,Computer Networks,Congestion Control,55
+38,DBMS,Transactions,92
+38,DAA,Dynamic Programming,89
+38,Compiler Design,Optimization,90
+38,Operating Systems,Memory Management,88
+38,Computer Networks,TCP,93
+39,DBMS,Indexing,78
+39,DAA,Sorting,80
+39,Compiler Design,Syntax Trees,77
+39,Operating Systems,Processes,79
+39,Computer Networks,Routing,83
+40,DBMS,SQL,96
+40,DAA,Graphs,94
+40,Compiler Design,Code Generation,95
+40,Operating Systems,Scheduling,93
+40,Computer Networks,OSI Model,97
+41,DBMS,Normalization,57
+41,DAA,Greedy,61
+41,Compiler Design,Parsing,59
+41,Operating Systems,Processes,63
+41,Computer Networks,Routing,67
+42,DBMS,Transactions,86
+42,DAA,Dynamic Programming,84
+42,Compiler Design,Optimization,82
+42,Operating Systems,Memory Management,88
+42,Computer Networks,TCP,85
+43,DBMS,SQL,72
+43,DAA,Graphs,75
+43,Compiler Design,Code Generation,73
+43,Operating Systems,Scheduling,71
+43,Computer Networks,OSI Model,78
+44,DBMS,ER Model,93
+44,DAA,Sorting,90
+44,Compiler Design,Syntax Trees,91
+44,Operating Systems,File Systems,89
+44,Computer Networks,IP Addressing,94
+45,DBMS,Normalization,41
+45,DAA,Backtracking,45
+45,Compiler Design,Lexical Analysis,43
+45,Operating Systems,Deadlock,39
+45,Computer Networks,Congestion Control,50
+46,DBMS,Transactions,81
+46,DAA,Dynamic Programming,83
+46,Compiler Design,Optimization,79
+46,Operating Systems,Memory Management,84
+46,Computer Networks,TCP,82
+47,DBMS,SQL,88
+47,DAA,Graphs,86
+47,Compiler Design,Code Generation,87
+47,Operating Systems,Scheduling,85
+47,Computer Networks,OSI Model,89
+48,DBMS,ER Model,95
+48,DAA,Sorting,92
+48,Compiler Design,Syntax Trees,94
+48,Operating Systems,File Systems,91
+48,Computer Networks,IP Addressing,96
+49,DBMS,Normalization,66
+49,DAA,Greedy,69
+49,Compiler Design,Parsing,67
+49,Operating Systems,Processes,70
+49,Computer Networks,Routing,72
+50,DBMS,Transactions,90
+50,DAA,Dynamic Programming,88
+50,Compiler Design,Optimization,89
+50,Operating Systems,Memory Management,87
+50,Computer Networks,TCP,91
+51,DBMS,SQL,54
+51,DAA,Graphs,58
+51,Compiler Design,Code Generation,56
+51,Operating Systems,Scheduling,60
+51,Computer Networks,OSI Model,62
+52,DBMS,ER Model,92
+52,DAA,Sorting,89
+52,Compiler Design,Syntax Trees,90
+52,Operating Systems,File Systems,88
+52,Computer Networks,IP Addressing,93
+53,DBMS,Normalization,76
+53,DAA,Backtracking,79
+53,Compiler Design,Lexical Analysis,74
+53,Operating Systems,Deadlock,77
+53,Computer Networks,Congestion Control,81
+54,DBMS,Transactions,73
+54,DAA,Dynamic Programming,75
+54,Compiler Design,Optimization,72
+54,Operating Systems,Memory Management,78
+54,Computer Networks,TCP,74
+55,DBMS,SQL,91
+55,DAA,Graphs,89
+55,Compiler Design,Code Generation,90
+55,Operating Systems,Scheduling,88
+55,Computer Networks,OSI Model,92
+56,DBMS,ER Model,84
+56,DAA,Sorting,82
+56,Compiler Design,Syntax Trees,83
+56,Operating Systems,File Systems,81
+56,Computer Networks,IP Addressing,86
+57,DBMS,Normalization,44
+57,DAA,Greedy,47
+57,Compiler Design,Parsing,42
+57,Operating Systems,Processes,49
+57,Computer Networks,Routing,53
+58,DBMS,Transactions,94
+58,DAA,Dynamic Programming,92
+58,Compiler Design,Optimization,93
+58,Operating Systems,Memory Management,91
+58,Computer Networks,TCP,95
+59,DBMS,SQL,79
+59,DAA,Graphs,81
+59,Compiler Design,Code Generation,78
+59,Operating Systems,Scheduling,80
+59,Computer Networks,OSI Model,84
+60,DBMS,ER Model,98
+60,DAA,Sorting,96
+60,Compiler Design,Syntax Trees,97
+60,Operating Systems,File Systems,95
+60,Computer Networks,IP Addressing,99
