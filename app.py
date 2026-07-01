@@ -35,9 +35,7 @@ if "student_id" not in st.session_state:
 if "student_name" not in st.session_state:
     st.session_state.student_name = None
 
-# =====================================
 # PAGE CONFIG
-# =====================================
 
 st.set_page_config(
     page_title="PrepPilot AI",
@@ -105,17 +103,14 @@ with col2:
 #     "assets/mainlogo.png",
 #     width=100
 # )
-# =====================================
+
 # LOAD AGENTS
-# =====================================
 
 student_agent = StudentAgent()
 
 sql_agent = SQLAgent()
 
-# =====================================
 # STUDENT SELECTION
-# =====================================
 
 # students = student_agent.get_all_students()
 
@@ -181,9 +176,8 @@ with st.sidebar:
         st.session_state.clear()
 
         st.rerun()
-# =====================================
+
 # LOGIN
-# =====================================
 
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
@@ -253,9 +247,8 @@ st.write(
 
 st.divider()
 
-# =====================================
+
 # TABS
-# =====================================
 
 tab1, tab2, tab3 = st.tabs(
     [
@@ -265,9 +258,8 @@ tab1, tab2, tab3 = st.tabs(
     ]
 )
 
-# =====================================
+
 # COLLEGE ASSISTANT
-# =====================================
 
 from rag.college_rag.retriever import get_college_retriever
 
@@ -279,20 +271,60 @@ with tab1:
     question = st.chat_input("Ask anything about GITAM...")
 
     if question:
+
         with st.chat_message("user"):
             st.write(question)
 
         with st.spinner("Searching..."):
-            # ✅ Actually retrieve relevant chunks
-            docs = college_retriever.invoke(question)
-            context = "\n\n".join([doc.page_content for doc in docs])
-            answer = ask_college_question(context, question)
+
+            docs = college_retriever.invoke(
+                question
+            )
+
+            context = "\n\n".join(
+                [
+                    doc.page_content
+                    for doc in docs
+                ]
+            )
+
+            answer = ask_college_question(
+                context,
+                question
+            )
 
         with st.chat_message("assistant"):
+
             st.write(answer)
-# =====================================
+
+            st.divider()
+
+            st.subheader("📚 Sources")
+
+            for i, doc in enumerate(docs, start=1):
+
+                source = doc.metadata.get(
+                    "source",
+                    "Unknown Source"
+                )
+
+                page = doc.metadata.get(
+                    "page",
+                    None
+                )
+
+                title = (
+                    f"📄 {source}"
+                    if page is None
+                    else f"📄 {source} (Page {page + 1})"
+                )
+
+                with st.expander(title):
+
+                    st.write(
+                        doc.page_content
+                    )
 # TEST PREPARATION
-# =====================================
 
 with tab2:
 
@@ -388,9 +420,8 @@ with tab2:
                 "Test Generated Successfully!"
             )
 
-# =====================================
+
 # STUDENT ANALYTICS
-# =====================================
 
 with tab3:
 
@@ -569,9 +600,8 @@ st.plotly_chart(
     use_container_width=True
 )
 
-# =====================================
+
 # DISPLAY GENERATED TEST
-# =====================================
 
 if "questions" in st.session_state:
 
