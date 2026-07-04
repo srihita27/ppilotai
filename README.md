@@ -100,19 +100,25 @@ The platform enables students to:
 
 | Category | Technology |
 |----------|------------|
-| Programming Language | Python |
-| Frontend | Streamlit |
-| Database | SQLite |
-| Data Processing | Pandas |
-| Visualization | Plotly |
-| LLM Provider | Groq |
-| Large Language Model | Llama 3.3 70B Versatile |
-| LLM Framework | LangChain |
-| Workflow Orchestration | LangGraph |
-| Vector Database | ChromaDB |
-| Embeddings | Sentence Transformers |
-| PDF Processing | PyPDF |
-| Environment Management | Python Dotenv |
+| **Programming Language** | Python |
+| **Frontend** | Streamlit |
+| **Database** | SQLite |
+| **Data Processing** | Pandas |
+| **Data Visualization** | Plotly |
+| **Large Language Model (LLM)** | Llama 3.3 70B Versatile |
+| **LLM Provider** | Groq |
+| **LLM Framework** | LangChain |
+| **AI Workflow Orchestration** | LangGraph |
+| **Vector Database** | ChromaDB |
+| **Embedding Model** | Sentence Transformers |
+| **Retrieval Technique** | Retrieval-Augmented Generation (RAG) |
+| **Natural Language Processing** | Natural Language to SQL |
+| **PDF Processing** | PyPDF |
+| **Environment Management** | Python Dotenv |
+| **UI Styling** | Custom CSS + Streamlit Components |
+| **Charts & Analytics** | Plotly Express |
+| **Version Control** | Git & GitHub |
+| **Deployment** | Streamlit Community Cloud |
 
 ---
 
@@ -337,7 +343,7 @@ PrepPilot AI can be deployed using:
 **Srihita Kotagiri**
 
 - GitHub: https://github.com/srihita27
-- LinkedIn: https://www.linkedin.com/srihita-kotagiri/
+- LinkedIn: https://www.linkedin.com/in/srihita-kotagiri/
 
 ---
 
