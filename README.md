@@ -93,7 +93,7 @@ The platform enables students to:
                         │
                         ▼
               Interactive Streamlit UI
-
+```
 ---
 
 # 🛠️ Technology Stack
