@@ -206,25 +206,6 @@ Performance Data   Similarity Retrieval   SQL Generation
 - ⚡ Groq Llama 3.3 Integration
 - 🎨 Modern Streamlit Dashboard
 - ☁️ Cloud Deployment Ready
-
----
-
-# 📸 Application Preview
-
-| Login | Dashboard |
-|-------|-----------|
-| `assets/login.png` | `assets/dashboard.png` |
-
-| College Assistant | SQL Assistant |
-|-------------------|---------------|
-| `assets/college_assistant.png` | `assets/sql_assistant.png` |
-
-| Test Generator | Analytics |
-|----------------|-----------|
-| `assets/test_generator.png` | `assets/analytics.png` |
-
-> Replace the placeholders above with actual screenshots after deployment.
-
 ---
 
 # 🌍 Use Cases
