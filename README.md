@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./assets/mainlogo.png" alt="PrepPilot AI Logo" width="220"/>
+  <img src="./assets/favicon.png" alt="PrepPilot AI Logo" width="220"/>
 </p>
 
-<h1 align="center">🎓 PrepPilot AI</h1>
+<h1 align="center">PrepPilot AI</h1>
 
 <p align="center">
 <b>Intelligent Student Learning & Analytics Platform</b>
@@ -93,3 +93,256 @@ The platform enables students to:
                         │
                         ▼
               Interactive Streamlit UI
+
+---
+
+# 🛠️ Technology Stack
+
+| Category | Technology |
+|----------|------------|
+| Programming Language | Python |
+| Frontend | Streamlit |
+| Database | SQLite |
+| Data Processing | Pandas |
+| Visualization | Plotly |
+| LLM Provider | Groq |
+| Large Language Model | Llama 3.3 70B Versatile |
+| LLM Framework | LangChain |
+| Workflow Orchestration | LangGraph |
+| Vector Database | ChromaDB |
+| Embeddings | Sentence Transformers |
+| PDF Processing | PyPDF |
+| Environment Management | Python Dotenv |
+
+---
+
+# 📂 Project Structure
+
+```text
+PrepPilot-AI/
+│
+├── agents/
+│   ├── college_agent.py
+│   ├── sql_chat_agent.py
+│   ├── student_agent.py
+│   └── test_generator.py
+│
+├── analytics/
+│   └── sql_agent.py
+│
+├── database/
+│   ├── students.db
+│   ├── students.csv
+│   └── performance.csv
+│
+├── rag/
+│   └── college_rag/
+│       ├── documents/
+│       ├── retriever.py
+│       ├── ingest.py
+│       └── chroma_db/
+│
+├── assets/
+│   ├── banner.png
+│   ├── favicon.png
+│   └── mainlogo.png
+│
+├── app.py
+├── requirements.txt
+├── .env
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 📊 Application Workflow
+
+```text
+                     Student Login
+                           │
+                           ▼
+                  Authentication System
+                           │
+      ┌────────────────────┼────────────────────┐
+      ▼                    ▼                    ▼
+Learning Analytics   AI College Assistant   AI SQL Assistant
+      │                    │                    │
+      ▼                    ▼                    ▼
+ SQLite Database     Chroma Vector DB     SQLite Database
+      │                    │                    │
+      ▼                    ▼                    ▼
+Performance Data   Similarity Retrieval   SQL Generation
+      │                    │                    │
+      └────────────────────┼────────────────────┘
+                           ▼
+                  Groq Large Language Model
+                           │
+        ┌──────────────────┼──────────────────┐
+        ▼                  ▼                  ▼
+ AI Responses      AI Test Generation    SQL Explanations
+                           │
+                           ▼
+               Interactive Streamlit Dashboard
+```
+
+---
+
+# 🤖 AI Modules
+
+## 🏫 AI College Assistant (RAG)
+
+PrepPilot AI uses Retrieval-Augmented Generation (RAG) to answer college-related questions accurately.
+
+Students can ask about:
+
+- 🎓 Admissions
+- 🏫 Campus Facilities
+- 📚 Academic Regulations
+- 📝 Examination Policies
+- 💼 Placements
+- 🛏 Hostel Facilities
+- 💳 Fee Structure
+- 📅 Academic Calendar
+
+The assistant retrieves the most relevant document chunks from ChromaDB before generating responses using the Groq LLM. Every response includes source attribution and a confidence score.
+
+---
+
+## 💬 AI SQL Assistant
+
+Students can interact with their academic database using natural language.
+
+Example queries include:
+
+- What are my weak subjects?
+- Which subject has my highest score?
+- Show my average marks.
+- Which subjects are above the class average?
+- How many tests have I completed?
+
+PrepPilot automatically:
+
+- Converts natural language into SQL
+- Executes the query on the SQLite database
+- Displays the results in a table
+- Generates interactive charts when applicable
+- Explains the results in simple language using AI
+
+---
+
+## 📝 AI Test Generator
+
+Students can generate personalized practice tests by selecting:
+
+- Subject
+- Difficulty Level (Easy / Medium / Hard)
+- Number of Questions
+
+The AI dynamically creates multiple-choice questions with answers and explanations, helping students prepare effectively.
+
+---
+
+## 📊 Learning Analytics
+
+The analytics dashboard provides valuable insights into student performance, including:
+
+- 🏆 Student Rank
+- 📈 Average Score
+- 🎓 Class Average
+- ⭐ Top Performer
+- 📉 Weak Subject Detection
+- 📚 Subject-wise Performance
+- 📊 Interactive Plotly Charts
+- 🎯 Personalized Learning Recommendations
+
+---
+
+# 📸 Screenshots
+
+Add screenshots of your application after deployment.
+
+Example:
+
+```text
+assets/
+├── login.png
+├── dashboard.png
+├── analytics.png
+├── college_assistant.png
+├── sql_assistant.png
+└── test_generator.png
+```
+
+---
+
+# 🌟 Key Highlights
+
+- 🔐 Secure Student Authentication
+- 🤖 AI-Powered College Assistant
+- 📚 Retrieval-Augmented Generation (RAG)
+- 💬 Natural Language to SQL
+- 📝 AI-Based Test Generation
+- 📊 Interactive Analytics Dashboard
+- 📈 Dynamic Plotly Visualizations
+- 🎯 Personalized Learning Insights
+- 📚 Confidence Scores & Source Attribution
+- ⚡ Powered by Groq Llama 3.3
+- ☁ Streamlit Cloud Deployment Ready
+
+---
+
+# 🌍 Applications
+
+PrepPilot AI can be adopted by:
+
+- 🎓 Universities
+- 🏫 Colleges
+- 📚 Coaching Institutes
+- 💻 E-learning Platforms
+- 👨‍🏫 Faculty Members
+- 👩‍🎓 Students
+- 📖 Academic Advisors
+
+---
+
+# 🔮 Future Improvements
+
+- 🎙 Voice-Based AI Assistant
+- 📄 PDF Performance Reports
+- 📅 AI Study Planner
+- 📱 Mobile Responsive Design
+- 🔔 Smart Notifications
+- 📈 Grade Prediction using Machine Learning
+- 🧠 Multi-Agent AI Collaboration
+- 🌐 Multi-University Support
+- 💬 Persistent Chat History
+
+---
+
+# 🚀 Deployment
+
+PrepPilot AI can be deployed using:
+
+- ☁️ Streamlit Community Cloud
+- 🚂 Railway
+- 🎨 Render
+- 🤗 Hugging Face Spaces
+- 🐳 Docker
+
+---
+
+# 👩‍💻 Author
+
+**Srihita Kotagiri**
+
+- GitHub: https://github.com/srihita27
+- LinkedIn: https://www.linkedin.com/srihita-kotagiri/
+
+---
+
+<p align="center">
+
+⭐ If you found this project useful, consider giving it a ⭐ on GitHub!
+
+</p>
