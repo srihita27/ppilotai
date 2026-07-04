@@ -4,7 +4,7 @@ import os
 
 from rag.college_rag.vector_store import build_vector_db
 import os
-
+from agents.sql_chat_agent import ask_database, explain_result
 if not os.path.exists("rag/college_rag/chroma_db"):
     build_vector_db()
 
@@ -164,6 +164,7 @@ with st.sidebar:
         - 🏫 College Assistant
         - 📚 Test Preparation
         - 📊 Student Analytics
+        - 💬 SQL Assistant
         """
     )
 
@@ -232,30 +233,18 @@ student_id = st.session_state.student_id
 st.success(
     f"👋 Welcome back, {st.session_state.student_name}"
 )
-st.write(
-        "### Modules"
-    )
-st.write(
-        "🏫 College Assistant"
-    )
-st.write(
-        "📚 Test Preparation"
-    )
-st.write(
-        "📊 Student Analytics"
-    )
-
 st.divider()
 
 
 # TABS
 
-tab1, tab2, tab3 = st.tabs(
-    [
-        "🏫 College Assistant",
-        "📚 Test Preparation",
-        "📊 Student Analytics"
-    ]
+tab1, tab2, tab3, tab4 = st.tabs(
+[
+    "🏫 College Assistant",
+    "📚 Test Preparation",
+    "📊 Student Analytics",
+    "💬 SQL Assistant"
+]
 )
 
 
@@ -565,6 +554,137 @@ track progress, and receive AI-powered recommendations.
         )
 
     st.divider()
+
+with tab4:
+
+    st.markdown("## 🤖 PrepPilot AI")
+    st.caption("Ask questions about your academic performance in natural language.")
+
+    question = st.chat_input(
+        "Ask about your academic performance..."
+    )
+
+    if question:
+
+        with st.chat_message("user"):
+            st.write(question)
+
+        with st.spinner("🤖 Thinking..."):
+
+            sql, columns, rows = ask_database(
+                question,
+                student_id
+            )
+
+            if columns:
+
+                import pandas as pd
+                import plotly.express as px
+
+                df = pd.DataFrame(
+                    rows,
+                    columns=columns
+                )
+
+                explanation = explain_result(
+                    question,
+                    sql,
+                    rows
+                )
+
+        if columns:
+
+            with st.chat_message("assistant"):
+
+                st.markdown("## 🤖 PrepPilot AI")
+
+                st.markdown(explanation)
+
+                st.divider()
+
+                col1, col2 = st.columns(2)
+
+                with col1:
+                    st.metric(
+                        "Results Found",
+                        len(df)
+                    )
+
+                with col2:
+
+                    if len(df.columns) == 2:
+
+                        try:
+
+                            st.metric(
+                                "Highest Value",
+                                round(df.iloc[:, 1].max(), 2)
+                            )
+
+                        except Exception:
+
+                            st.metric(
+                                "Columns",
+                                len(df.columns)
+                            )
+
+                st.divider()
+
+                st.subheader("📊 Results")
+
+                st.dataframe(
+                    df,
+                    use_container_width=True,
+                    hide_index=True
+                )
+
+                # Automatic chart
+                if len(df.columns) == 2:
+
+                    fig = px.bar(
+                        df,
+                        x=df.columns[0],
+                        y=df.columns[1],
+                        text=df.columns[1],
+                        title="Result Visualization"
+                    )
+
+                    fig.update_layout(
+                        template="plotly_white",
+                        height=420,
+                        showlegend=False,
+                        margin=dict(
+                            l=20,
+                            r=20,
+                            t=50,
+                            b=20
+                        )
+                    )
+
+                    fig.update_traces(
+                        textposition="outside"
+                    )
+
+                    st.plotly_chart(
+                        fig,
+                        use_container_width=True
+                    )
+
+                st.divider()
+
+                with st.expander("🧠 How did I answer this?"):
+
+                    st.markdown("#### Generated SQL")
+
+                    st.code(
+                        sql,
+                        language="sql"
+                    )
+
+        else:
+
+            with st.chat_message("assistant"):
+                st.error(rows)
 
 st.subheader(
     "📈 Subject Performance"
