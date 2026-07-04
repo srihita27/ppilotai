@@ -96,29 +96,19 @@ The platform enables students to:
 ```
 ---
 
-# 🛠️ Technology Stack
+# 🛠 Tech Stack
 
-| Category | Technology |
-|----------|------------|
-| **Programming Language** | Python |
-| **Frontend** | Streamlit |
-| **Database** | SQLite |
-| **Data Processing** | Pandas |
-| **Data Visualization** | Plotly |
-| **Large Language Model (LLM)** | Llama 3.3 70B Versatile |
-| **LLM Provider** | Groq |
-| **LLM Framework** | LangChain |
-| **AI Workflow Orchestration** | LangGraph |
-| **Vector Database** | ChromaDB |
-| **Embedding Model** | Sentence Transformers |
-| **Retrieval Technique** | Retrieval-Augmented Generation (RAG) |
-| **Natural Language Processing** | Natural Language to SQL |
-| **PDF Processing** | PyPDF |
-| **Environment Management** | Python Dotenv |
-| **UI Styling** | Custom CSS + Streamlit Components |
-| **Charts & Analytics** | Plotly Express |
-| **Version Control** | Git & GitHub |
-| **Deployment** | Streamlit Community Cloud |
+| Category | Stack |
+|:---------|:------|
+| 🖥 **Frontend** | Streamlit, Custom CSS |
+| ⚙️ **Backend** | Python |
+| 🤖 **AI** | Groq (Llama 3.3), LangChain, LangGraph |
+| 📚 **RAG Pipeline** | ChromaDB, Sentence Transformers |
+| 🗄 **Database** | SQLite |
+| 📊 **Analytics** | Pandas, Plotly |
+| 📄 **Document Processing** | PyPDF |
+| ☁️ **Deployment** | Streamlit Community Cloud |
+| 🔧 **Version Control** | Git & GitHub |
 
 ---
 
@@ -191,150 +181,88 @@ Performance Data   Similarity Retrieval   SQL Generation
                            ▼
                Interactive Streamlit Dashboard
 ```
+---
+
+# 🤖 Core AI Modules
+
+| Module | Description |
+|--------|-------------|
+| 🏫 **College Assistant (RAG)** | Answers university-related queries using Retrieval-Augmented Generation (RAG) over institutional documents with source attribution and confidence scores. |
+| 💬 **AI SQL Assistant** | Converts natural language into SQL, executes queries on the academic database, visualizes results, and generates AI-powered explanations. |
+| 📝 **Test Generator** | Dynamically generates personalized MCQ assessments based on subject and selected difficulty using LLMs. |
+| 📊 **Learning Analytics** | Provides performance insights including student rank, averages, weak subjects, trends, and interactive visualizations. |
 
 ---
 
-# 🤖 AI Modules
-
-## 🏫 AI College Assistant (RAG)
-
-PrepPilot AI uses Retrieval-Augmented Generation (RAG) to answer college-related questions accurately.
-
-Students can ask about:
-
-- 🎓 Admissions
-- 🏫 Campus Facilities
-- 📚 Academic Regulations
-- 📝 Examination Policies
-- 💼 Placements
-- 🛏 Hostel Facilities
-- 💳 Fee Structure
-- 📅 Academic Calendar
-
-The assistant retrieves the most relevant document chunks from ChromaDB before generating responses using the Groq LLM. Every response includes source attribution and a confidence score.
-
----
-
-## 💬 AI SQL Assistant
-
-Students can interact with their academic database using natural language.
-
-Example queries include:
-
-- What are my weak subjects?
-- Which subject has my highest score?
-- Show my average marks.
-- Which subjects are above the class average?
-- How many tests have I completed?
-
-PrepPilot automatically:
-
-- Converts natural language into SQL
-- Executes the query on the SQLite database
-- Displays the results in a table
-- Generates interactive charts when applicable
-- Explains the results in simple language using AI
-
----
-
-## 📝 AI Test Generator
-
-Students can generate personalized practice tests by selecting:
-
-- Subject
-- Difficulty Level (Easy / Medium / Hard)
-- Number of Questions
-
-The AI dynamically creates multiple-choice questions with answers and explanations, helping students prepare effectively.
-
----
-
-## 📊 Learning Analytics
-
-The analytics dashboard provides valuable insights into student performance, including:
-
-- 🏆 Student Rank
-- 📈 Average Score
-- 🎓 Class Average
-- ⭐ Top Performer
-- 📉 Weak Subject Detection
-- 📚 Subject-wise Performance
-- 📊 Interactive Plotly Charts
-- 🎯 Personalized Learning Recommendations
-
----
-
-# 📸 Screenshots
-
-Add screenshots of your application after deployment.
-
-Example:
-
-```text
-assets/
-├── login.png
-├── dashboard.png
-├── analytics.png
-├── college_assistant.png
-├── sql_assistant.png
-└── test_generator.png
-```
-
----
-
-# 🌟 Key Highlights
+# ⚡ Key Capabilities
 
 - 🔐 Secure Student Authentication
-- 🤖 AI-Powered College Assistant
-- 📚 Retrieval-Augmented Generation (RAG)
+- 🤖 Retrieval-Augmented Generation (RAG)
 - 💬 Natural Language to SQL
-- 📝 AI-Based Test Generation
-- 📊 Interactive Analytics Dashboard
-- 📈 Dynamic Plotly Visualizations
-- 🎯 Personalized Learning Insights
-- 📚 Confidence Scores & Source Attribution
-- ⚡ Powered by Groq Llama 3.3
-- ☁ Streamlit Cloud Deployment Ready
+- 📝 AI-Powered Test Generation
+- 📊 Interactive Learning Analytics
+- 📈 Plotly Performance Visualizations
+- 📚 Source Attribution & Confidence Scores
+- ⚡ Groq Llama 3.3 Integration
+- 🎨 Modern Streamlit Dashboard
+- ☁️ Cloud Deployment Ready
 
 ---
 
-# 🌍 Applications
+# 📸 Application Preview
 
-PrepPilot AI can be adopted by:
+| Login | Dashboard |
+|-------|-----------|
+| `assets/login.png` | `assets/dashboard.png` |
 
-- 🎓 Universities
-- 🏫 Colleges
+| College Assistant | SQL Assistant |
+|-------------------|---------------|
+| `assets/college_assistant.png` | `assets/sql_assistant.png` |
+
+| Test Generator | Analytics |
+|----------------|-----------|
+| `assets/test_generator.png` | `assets/analytics.png` |
+
+> Replace the placeholders above with actual screenshots after deployment.
+
+---
+
+# 🌍 Use Cases
+
+PrepPilot AI is designed for modern educational environments including:
+
+- 🎓 Universities & Colleges
+- 💻 Learning Management Systems (LMS)
 - 📚 Coaching Institutes
-- 💻 E-learning Platforms
-- 👨‍🏫 Faculty Members
 - 👩‍🎓 Students
-- 📖 Academic Advisors
+- 👨‍🏫 Faculty & Academic Advisors
 
 ---
 
-# 🔮 Future Improvements
+# 🛣️ Roadmap
 
-- 🎙 Voice-Based AI Assistant
-- 📄 PDF Performance Reports
-- 📅 AI Study Planner
-- 📱 Mobile Responsive Design
-- 🔔 Smart Notifications
-- 📈 Grade Prediction using Machine Learning
-- 🧠 Multi-Agent AI Collaboration
-- 🌐 Multi-University Support
-- 💬 Persistent Chat History
+- [ ] Voice-enabled AI Assistant
+- [ ] Personalized Study Planner
+- [ ] AI-based Grade Prediction
+- [ ] PDF Performance Reports
+- [ ] Smart Notifications & Reminders
+- [ ] Persistent Chat History
+- [ ] Multi-Agent Collaboration
+- [ ] Multi-University Support
+- [ ] Mobile-Optimized Interface
 
 ---
 
 # 🚀 Deployment
 
-PrepPilot AI can be deployed using:
+PrepPilot AI can be deployed on:
 
 - ☁️ Streamlit Community Cloud
 - 🚂 Railway
 - 🎨 Render
 - 🤗 Hugging Face Spaces
 - 🐳 Docker
+
 
 ---
 
