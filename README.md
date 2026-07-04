@@ -203,7 +203,7 @@ Performance Data   Similarity Retrieval   SQL Generation
 - 📊 Interactive Learning Analytics
 - 📈 Plotly Performance Visualizations
 - 📚 Source Attribution & Confidence Scores
-- ⚡ Groq Llama 3.3 Integration
+- ⚡ Groq Llama 3.3 Integration 
 - 🎨 Modern Streamlit Dashboard
 - ☁️ Cloud Deployment Ready
 ---
@@ -222,7 +222,7 @@ PrepPilot AI is designed for modern educational environments including:
 
 # 🛣️ Roadmap
 
-- [ ] Voice-enabled AI Assistant
+- [ ] Voice-enabled AI Assistant 
 - [ ] Personalized Study Planner
 - [ ] AI-based Grade Prediction
 - [ ] PDF Performance Reports
@@ -258,6 +258,6 @@ PrepPilot AI can be deployed on:
 
 <p align="center">
 
-⭐ If you found this project useful, consider giving it a ⭐ on GitHub!
+- If you found this project useful, consider giving it a ⭐ on GitHub!
 
 </p>
