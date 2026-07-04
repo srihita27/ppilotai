@@ -1,15 +1,25 @@
-# 🎓 PrepPilot AI – Intelligent Academic Assistant
+<p align="center">
+  <img src="./assets/mainlogo.png" alt="PrepPilot AI Logo" width="220"/>
+</p>
+
+<h1 align="center">🎓 PrepPilot AI</h1>
+
+<p align="center">
+<b>Intelligent Student Learning & Analytics Platform</b>
+<br>
+AI-powered academic assistance using Retrieval-Augmented Generation (RAG), Natural Language to SQL, Learning Analytics, Adaptive Test Generation, and Large Language Models.
+</p>
 
 <p align="center">
 
-**An AI-powered student learning platform that combines Retrieval-Augmented Generation (RAG), Natural Language to SQL, Learning Analytics, and Generative AI to provide personalized academic assistance.**
-
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-FF4B4B?logo=streamlit)
-![LangChain](https://img.shields.io/badge/LangChain-LLM-green)
-![Groq](https://img.shields.io/badge/Groq-LLM-orange)
-![ChromaDB](https://img.shields.io/badge/Vector%20DB-ChromaDB-blueviolet)
-![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?logo=sqlite)
+![LangChain](https://img.shields.io/badge/LangChain-LLM%20Framework-green)
+![LangGraph](https://img.shields.io/badge/LangGraph-Agent%20Workflow-6A5ACD)
+![Groq](https://img.shields.io/badge/Groq-Llama%203.3-orange)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-purple)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?logo=plotly)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 </p>
@@ -18,16 +28,23 @@
 
 # 📖 Overview
 
-PrepPilot AI is an intelligent student assistant designed to enhance academic performance through AI-powered learning support.
+PrepPilot AI is an AI-powered academic assistant that transforms traditional student portals into an intelligent learning platform.
 
-Instead of simply displaying grades or static dashboards, PrepPilot allows students to:
+Rather than simply displaying marks and attendance, PrepPilot leverages Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Natural Language to SQL, and learning analytics to deliver personalized academic support.
 
-- 💬 Ask questions about their academic performance using natural language
-- 📊 Analyze performance through interactive dashboards
-- 🤖 Chat with an AI College Assistant using Retrieval-Augmented Generation (RAG)
-- 📝 Generate practice tests automatically using LLMs
-- 🧠 Query academic records using Natural Language to SQL
-- 📈 Receive personalized insights and recommendations
+Students can interact with their academic data conversationally, generate customized assessments, receive AI-powered explanations, and gain actionable insights into their performance—all from a single intuitive dashboard.
+
+The platform enables students to:
+
+- 🔐 Securely log in using Student ID & Password
+- 🏫 Chat with an AI-powered College Assistant using RAG
+- 📝 Generate personalized MCQ practice tests
+- 💬 Query academic records using Natural Language
+- 📊 Explore interactive learning analytics dashboards
+- 📈 Visualize subject-wise performance
+- 🎯 Identify weak subjects automatically
+- 🤖 Receive AI-generated explanations and recommendations
+- 📚 View confidence scores and document sources for AI responses
 
 ---
 
@@ -35,111 +52,44 @@ Instead of simply displaying grades or static dashboards, PrepPilot allows stude
 
 | Feature | Description |
 |---------|-------------|
-| 🔐 Student Login | Secure authentication using Student ID and Password |
-| 📊 Learning Analytics | Interactive academic dashboard with performance metrics |
-| 📈 Subject Performance Charts | Visualize marks using Plotly charts |
-| 🏫 AI College Assistant | RAG-powered chatbot answering college-related questions |
-| 📝 AI Test Generator | Automatically generates subject-wise practice tests |
-| 💬 Natural Language to SQL | Ask questions like "What are my weakest subjects?" |
-| 🤖 AI Explanations | Converts SQL results into human-friendly insights |
-| 📚 Source Citation | Displays retrieved RAG documents with confidence scores |
-| 🎨 Modern UI | Professional Streamlit interface with custom sidebar and branding |
+| 🔐 Student Authentication | Secure login system using Student ID & Password |
+| 🏫 AI College Assistant | Retrieval-Augmented chatbot answering university-related questions |
+| 📝 AI Test Generator | Generates customized MCQ tests based on subject and difficulty |
+| 💬 Natural Language to SQL | Ask academic questions in plain English |
+| 📊 Student Analytics Dashboard | Displays rankings, averages, weak subjects and insights |
+| 📈 Interactive Charts | Plotly-based performance visualizations |
+| 📚 Source Attribution | Shows retrieved documents used for AI responses |
+| 🎯 Confidence Score | Displays retrieval confidence for every AI answer |
+| 🤖 AI Explanations | Explains SQL query results in natural language |
+| 🎨 Modern UI | Custom Streamlit interface with responsive dashboard |
 
 ---
 
-# 🧠 AI Modules
-
-## 1️⃣ Learning Analytics
-
-PrepPilot analyzes student performance and displays:
-
-- Overall Average
-- Class Average
-- Student Rank
-- Weak Subjects
-- Top Student
-- Subject-wise Performance Charts
-
----
-
-## 2️⃣ AI College Assistant (RAG)
-
-Students can ask questions such as:
-
-- Admission Process
-- Attendance Rules
-- Examination Policies
-- College Facilities
-- Placements
-- Academic Regulations
-
-The assistant retrieves relevant documents using ChromaDB and generates accurate answers with source citations.
-
----
-
-## 3️⃣ AI Test Generator
-
-Students can generate customized practice tests by selecting:
-
-- Subject
-- Difficulty Level
-- Number of Questions
-
-The questions are generated dynamically using Groq LLM.
-
----
-
-## 4️⃣ Natural Language to SQL
-
-Students can ask:
-
-> "What are my weakest subjects?"
-
-> "Show my highest scoring subject."
-
-> "What is my average score?"
-
-PrepPilot automatically:
-
-Natural Language
-
-⬇
-
-SQL Query
-
-⬇
-
-SQLite Database
-
-⬇
-
-Results Table
-
-⬇
-
-AI Explanation
-
----
-
-# 🏗 System Architecture
+# 📌 System Architecture
 
 ```text
-                     Student
+                      Student Login
+                            │
+                            ▼
+                  Authentication System
+                            │
+        ┌───────────────────┼───────────────────┐
+        ▼                   ▼                   ▼
+ Learning Analytics   AI College Assistant   AI SQL Assistant
+        │                   │                   │
+        ▼                   ▼                   ▼
+ SQLite Database     Chroma Vector DB     SQLite Database
+        │                   │                   │
+        ▼                   ▼                   ▼
+ Performance Data   Similarity Retrieval   SQL Generation
+        │                   │                   │
+        └───────────────┬───┴───────────────────┘
+                        ▼
+               Groq Large Language Model
+                        │
+        ┌───────────────┼───────────────────┐
+        ▼               ▼                   ▼
+ AI Responses     Test Generation     SQL Explanations
                         │
                         ▼
-               Streamlit Frontend
-                        │
-        ┌───────────────┼────────────────┐
-        │               │                │
-        ▼               ▼                ▼
- Learning Analytics   RAG Assistant   SQL Assistant
-        │               │                │
-        ▼               ▼                ▼
- SQLite Database    ChromaDB       SQLite Database
-        │               │                │
-        └───────────────┼────────────────┘
-                        ▼
-                 Groq LLM (Llama 3)
-                        │
-                        ▼
-                AI Generated Response
+              Interactive Streamlit UI
