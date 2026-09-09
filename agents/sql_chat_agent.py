@@ -8,7 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 load_dotenv()
 
 llm = ChatGroq(
-    model_name="llama-3.1-8b-instant",
+    model_name="openai/gpt-oss-120b",
     groq_api_key=os.getenv("GROQ_API_KEY"),
     temperature=0
 )
